@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T14:30:15.086Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="3-grnIaVHZELvX24GrxQ" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-26T14:35:21.159Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="f3-x85tmiptD4dSNvX2c" version="23.1.6" type="github">
   <diagram name="Page-1" id="y9tZOpb5WZTJpGTc20qA">
     <mxGraphModel dx="2212" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -43,17 +43,41 @@
         <mxCell id="5SQU8DpvYNsy1SVrQFl--6" value="&lt;div&gt;可重复读&lt;/div&gt;&lt;div&gt;repeatable read&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="480" y="480" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--7" target="5SQU8DpvYNsy1SVrQFl--24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--7" value="&lt;div&gt;串行化&lt;/div&gt;&lt;div&gt;seriailar&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="740" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--12" target="5SQU8DpvYNsy1SVrQFl--18">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--12" value="&lt;div&gt;读写都不加锁、不隔离、每次查询都是最新版本、&lt;/div&gt;&lt;div&gt;性能最好，等于没有事务，很少采用&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-240" y="630" width="200" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--14" target="5SQU8DpvYNsy1SVrQFl--20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--14" value="&lt;div&gt;读取此时已经提交的数据，oracle 数据库的默认格里级别&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-5" y="620" width="250" height="100" as="geometry" />
         </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--16" target="5SQU8DpvYNsy1SVrQFl--22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--16" value="&lt;div&gt;读取的是本事务开始的状态。&lt;/div&gt;&lt;div&gt;即在当前事务中，不论读取多少次，都是一样的结果，同样的，写的时候加X锁。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="405" y="610" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--18" value="&lt;div&gt;事务1，开启事务&lt;/div&gt;&lt;div&gt;修改数据，&lt;/div&gt;&lt;div&gt;不提交事务&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;事务2 可以读取到修改后的结果&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-235" y="830" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--20" value="&lt;div&gt;开启事务1，修改数据，提交事务。&lt;/div&gt;&lt;div&gt;开始事务1后开启事务2，可以读取到修改的数据&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="830" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--22" value="&lt;div&gt;开启事务1， 修改数据，提交事务&lt;/div&gt;&lt;div&gt;开启事务1之后未提交事务之前，开启事务2.&lt;/div&gt;&lt;div&gt;即使 事务1提交了事务，事务2也不会读取到修改的数据。&lt;/div&gt;&lt;div&gt;除非 提交事务1之后，再次开启事务，才能读取到修改后的内容。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="830" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--24" value="一次一个事务处理，串行处理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="740" y="620" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
