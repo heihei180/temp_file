@@ -1,17 +1,47 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T14:08:30.217Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="pfMXlraZ6Pn_x349PiDZ" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-26T14:14:22.572Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="bUhz9pNz42LuFNI6wDXz" version="23.1.6" type="github">
   <diagram name="Page-1" id="y9tZOpb5WZTJpGTc20qA">
-    <mxGraphModel dx="1362" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2212" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="5SQU8DpvYNsy1SVrQFl--1" value="&lt;div&gt;事务的特性：&lt;/div&gt;&lt;div&gt;1. 原子性&lt;/div&gt;&lt;div&gt;2.一致性&lt;/div&gt;&lt;div&gt;3.隔离性&lt;/div&gt;&lt;div&gt;4.持久性&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="300" width="210" height="100" as="geometry" />
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--1" target="5SQU8DpvYNsy1SVrQFl--4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--1" target="5SQU8DpvYNsy1SVrQFl--5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--1" target="5SQU8DpvYNsy1SVrQFl--6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--1" target="5SQU8DpvYNsy1SVrQFl--7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--1" value="隔离性" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="220" y="330" width="220" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--2" value="innodb" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="240" y="70" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="5SQU8DpvYNsy1SVrQFl--3" value="&lt;h1&gt;事务的特性&lt;br&gt;&lt;/h1&gt;&lt;p&gt;1.原子性&lt;/p&gt;&lt;p&gt;最小的操作单元&lt;/p&gt;&lt;p&gt;2.一致性&lt;/p&gt;&lt;p&gt;要么一起成功，要么一起失败。&lt;/p&gt;&lt;p&gt;3.隔离性&lt;/p&gt;&lt;p&gt;4.持久性&lt;br&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="500" y="60" width="190" height="120" as="geometry" />
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--3" value="&lt;h1&gt;事务的特性&lt;br&gt;&lt;/h1&gt;&lt;p&gt;1.原子性&lt;/p&gt;&lt;p&gt;最小的操作单元&lt;/p&gt;&lt;p&gt;2.一致性&lt;/p&gt;&lt;p&gt;要么一起成功，要么一起失败。&lt;/p&gt;&lt;p&gt;3.隔离性&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;锁和 undolog 实现了 隔离性&lt;br&gt;&lt;/p&gt;&lt;p&gt;4.持久性&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;redolog 实现了持久性&lt;br&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-200" y="80" width="340" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--4" target="5SQU8DpvYNsy1SVrQFl--12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--4" value="&lt;div&gt;读未提交&lt;/div&gt;&lt;div&gt;read uncommited&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-150" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--5" value="&lt;div&gt;读提交&lt;/div&gt;&lt;div&gt;read commited&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="70" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--6" value="&lt;div&gt;可重复读&lt;/div&gt;&lt;div&gt;repeatable read&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="450" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--7" value="&lt;div&gt;串行化&lt;/div&gt;&lt;div&gt;seriailar&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="740" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--12" value="&lt;div&gt;读写都不加锁、不隔离、每次查询都是最新版本、&lt;/div&gt;&lt;div&gt;性能最好，等于没有事务，很少采用&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="630" width="200" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
