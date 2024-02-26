@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T14:44:11.614Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="IrC4ESC5JirRG8S91fW1" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-26T14:44:57.231Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="_JD32NIANnSGZMvz1UvS" version="23.1.6" type="github">
   <diagram name="Page-1" id="2rnLcx_xgWCIBUnER_U7">
     <mxGraphModel dx="1362" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -9,6 +9,15 @@
         </mxCell>
         <mxCell id="COu84_jl5_JWKWYQJhoR-3" value="&lt;h1&gt;快照读&lt;/h1&gt;&lt;p&gt;L不锁定数据的情况下，读取书记的特定历史版本&lt;/p&gt;&lt;p&gt;版本由事务的具体需求确定：&lt;/p&gt;&lt;p&gt;读一提交，根据每次select时，其他事务的提交情况&lt;br&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="510" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="COu84_jl5_JWKWYQJhoR-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="COu84_jl5_JWKWYQJhoR-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="COu84_jl5_JWKWYQJhoR-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="290" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
