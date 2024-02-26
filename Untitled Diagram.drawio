@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T14:14:22.572Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="bUhz9pNz42LuFNI6wDXz" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-26T14:30:15.086Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="3-grnIaVHZELvX24GrxQ" version="23.1.6" type="github">
   <diagram name="Page-1" id="y9tZOpb5WZTJpGTc20qA">
     <mxGraphModel dx="2212" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -29,19 +29,31 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--4" value="&lt;div&gt;读未提交&lt;/div&gt;&lt;div&gt;read uncommited&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="-150" y="480" width="120" height="60" as="geometry" />
+          <mxGeometry x="-200" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--5" target="5SQU8DpvYNsy1SVrQFl--14">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--5" value="&lt;div&gt;读提交&lt;/div&gt;&lt;div&gt;read commited&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="70" y="480" width="120" height="60" as="geometry" />
+          <mxGeometry x="60" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5SQU8DpvYNsy1SVrQFl--6" target="5SQU8DpvYNsy1SVrQFl--16">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--6" value="&lt;div&gt;可重复读&lt;/div&gt;&lt;div&gt;repeatable read&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="450" y="480" width="120" height="60" as="geometry" />
+          <mxGeometry x="480" y="480" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--7" value="&lt;div&gt;串行化&lt;/div&gt;&lt;div&gt;seriailar&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="740" y="480" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="5SQU8DpvYNsy1SVrQFl--12" value="&lt;div&gt;读写都不加锁、不隔离、每次查询都是最新版本、&lt;/div&gt;&lt;div&gt;性能最好，等于没有事务，很少采用&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-190" y="630" width="200" height="80" as="geometry" />
+          <mxGeometry x="-240" y="630" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--14" value="&lt;div&gt;读取此时已经提交的数据，oracle 数据库的默认格里级别&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="620" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5SQU8DpvYNsy1SVrQFl--16" value="&lt;div&gt;读取的是本事务开始的状态。&lt;/div&gt;&lt;div&gt;即在当前事务中，不论读取多少次，都是一样的结果，同样的，写的时候加X锁。&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="610" width="270" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
