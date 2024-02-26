@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-26T15:09:15.657Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="LYZKtsCW8eMwH3oE249y" version="23.1.6" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-26T15:09:23.092Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="AUyIZDle5bOz4wuWwUT6" version="23.1.6" type="github">
   <diagram name="Page-1" id="2rnLcx_xgWCIBUnER_U7">
     <mxGraphModel dx="1362" dy="749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -19,7 +19,7 @@
         <mxCell id="COu84_jl5_JWKWYQJhoR-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="670" y="290" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="COu84_jl5_JWKWYQJhoR-7" value="&lt;h1&gt;MVCC&lt;/h1&gt;&lt;p&gt;L&lt;/p&gt;&lt;p&gt;针对不同的隔离级别，由于有undoLog的存在，&lt;/p&gt;&lt;p&gt;并且每个事务开启的时候，会生成一个txid， 因此，当不同的事务读取的时候，会根据隔离级别去undolog文件中获取需要的数据&lt;br&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+        <mxCell id="COu84_jl5_JWKWYQJhoR-7" value="&lt;h1&gt;MVCC&lt;/h1&gt;&lt;p&gt;针对不同的隔离级别，由于有undoLog的存在，&lt;/p&gt;&lt;p&gt;并且每个事务开启的时候，会生成一个txid， 因此，当不同的事务读取的时候，会根据隔离级别去undolog文件中获取需要的数据&lt;br&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="505" y="500" width="325" height="160" as="geometry" />
         </mxCell>
         <mxCell id="COu84_jl5_JWKWYQJhoR-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="COu84_jl5_JWKWYQJhoR-8" target="COu84_jl5_JWKWYQJhoR-9">
