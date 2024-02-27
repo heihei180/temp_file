@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-02-27T15:39:02.514Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="Mg7BDr85iEHqwpGAAP3_" version="23.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-02-27T15:46:57.704Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="GPPoVzIa4eYffZvph-cl" version="23.1.7" type="github">
   <diagram name="Page-1" id="Jtu7l2riXO6fCj7KywLi">
     <mxGraphModel dx="1362" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -49,11 +49,20 @@
         <mxCell id="mdVPJ-yCepu3xSWqzpOk-21" value="OLD区域，37%" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="620" y="838" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mdVPJ-yCepu3xSWqzpOk-22" value="再次加入数据的时候，就不再从中间加入了，而是从中间&amp;nbsp; midpoint区域开始加入" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="150" y="960" width="260" height="80" as="geometry" />
+        <mxCell id="mdVPJ-yCepu3xSWqzpOk-22" value="&lt;div&gt;再次加入数据的时候，就不再从中间加入了，而是从中间&amp;nbsp; midpoint区域开始加入，&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果后面的数据被再次访问，将会移到前面的热数据区域。&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="990" width="520" height="80" as="geometry" />
         </mxCell>
         <mxCell id="mdVPJ-yCepu3xSWqzpOk-23" value="改进型&amp;nbsp; LRU算法 链表数据结构" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="100" y="778" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mdVPJ-yCepu3xSWqzpOk-24" value="什么时候移动到热点数据区？" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1100" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mdVPJ-yCepu3xSWqzpOk-25" value="存在时间超过一秒，将其移动到链表的头部" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="1188" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mdVPJ-yCepu3xSWqzpOk-26" value="如果该页在LRU链表中存在的时间小于1s，位置不便" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1238" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
