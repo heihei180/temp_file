@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-03T04:34:54.470Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="hgXLqm4W_t794QBJ9C7Z" version="23.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-03T04:44:08.478Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="E0yTmsdAVc_XBgwNYej6" version="23.1.7" type="github">
   <diagram name="Page-1" id="gy4NEoS5YfscLkt1rcrz">
     <mxGraphModel dx="2212" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -85,7 +85,7 @@
         <mxCell id="opUYMGLfa8pnxmachDHJ-33" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
           <mxGeometry x="710" y="620" width="20" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="opUYMGLfa8pnxmachDHJ-34" value="每个区有6个页 1M" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="opUYMGLfa8pnxmachDHJ-34" value="每个区有64个页 1M" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="730" y="665" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="opUYMGLfa8pnxmachDHJ-35" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
@@ -123,6 +123,21 @@
         </mxCell>
         <mxCell id="opUYMGLfa8pnxmachDHJ-48" value="col 1、col 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="5" y="890" width="105" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="opUYMGLfa8pnxmachDHJ-49" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;表空间&lt;/div&gt;&lt;div&gt;可以看作是 innodb 存储引擎逻辑结构的最高层，用于存储多ibd文件，用于存储表记录和索引&lt;br&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="300" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="opUYMGLfa8pnxmachDHJ-50" value="&lt;p&gt;段是磁盘上空间分配和回收的申请者，是一个逻辑概念，用来管理物理文件。&lt;br&gt;&lt;/p&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="890" y="330" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="opUYMGLfa8pnxmachDHJ-51" value="由连续的页组成的空间，每个区中有64个连续的页，大小为1M" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="645" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="opUYMGLfa8pnxmachDHJ-52" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;页是用来存储多个row 行记录的，包含了多种页的类型，数据页，undo页，系统页，事务页。&lt;br&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="470" y="890" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="opUYMGLfa8pnxmachDHJ-53" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;数据按照行进行存储，每个页最多存放最多7992行记录。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;16KB / 2 -200 &lt;br&gt;&lt;/div&gt;&lt;div&gt;行记录包含了字段值，事务id，回滚指针，字段指针&lt;br&gt;&lt;/div&gt;" style="text;html=1;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="810" width="190" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
