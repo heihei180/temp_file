@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-08T16:10:36.110Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="nBfUfyUZfCvWVvc0vyq7" version="24.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-09T08:03:46.739Z" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="iHzKmEGkQyb1A9_8pmbU" version="24.0.1" type="github">
   <diagram name="Page-1" id="DfGXGSeiKtF_Vn_WUQW6">
     <mxGraphModel dx="2212" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -100,11 +100,163 @@
         <mxCell id="0e4srzgfKUrXxJ_X6snr-36" value="org.apache.hadoop.hdfs.server.namenode.NameNode#loadNamesystem" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="70" y="1118" width="410" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="0e4srzgfKUrXxJ_X6snr-39" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-39" target="0e4srzgfKUrXxJ_X6snr-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-39" target="0e4srzgfKUrXxJ_X6snr-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="1600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-39" target="0e4srzgfKUrXxJ_X6snr-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="530" y="2060" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-39" value="loadFromDisk" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="470" y="1170" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="0e4srzgfKUrXxJ_X6snr-41" value="org.apache.hadoop.hdfs.server.namenode.FSNamesystem#loadFromDisk" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="345" y="1148" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-42" target="0e4srzgfKUrXxJ_X6snr-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-42" target="0e4srzgfKUrXxJ_X6snr-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-42" target="0e4srzgfKUrXxJ_X6snr-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-42" value="创建 fsimage" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-44" target="0e4srzgfKUrXxJ_X6snr-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-44" value="editslog路径file:///home/guoqiang/tmp/dfs/name" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1211" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-46" target="0e4srzgfKUrXxJ_X6snr-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-46" value="fsimage 路径file:///home/guoqiang/tmp/dfs/name" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1129" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-49" target="0e4srzgfKUrXxJ_X6snr-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-49" value="创建 NNStorage" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-52" target="0e4srzgfKUrXxJ_X6snr-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-52" value="&lt;div&gt;存储组建StorageDirectory&lt;/div&gt;&lt;div&gt;设置存储目录&lt;/div&gt;&lt;div&gt;/home/guoqiang/tmp/dfs/name&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="1155" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-54" target="0e4srzgfKUrXxJ_X6snr-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-54" value="将存储组建StorageDirectory放入org.apache.hadoop.hdfs.server.common.Storage#storageDirs" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="1150" width="345" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-58" target="0e4srzgfKUrXxJ_X6snr-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-58" value="&lt;div&gt;创建editlog的实例其中参数1 是 storeDir对象&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="1170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-60" target="0e4srzgfKUrXxJ_X6snr-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-60" target="0e4srzgfKUrXxJ_X6snr-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-60" target="0e4srzgfKUrXxJ_X6snr-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-60" value="根据配置决定是否异步写日志dfs.namenode.edits.asynclogging默认是true" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="1300" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-62" value="FSEditLogAsync" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2247.5" y="1360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-64" value="FSEditLog" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2247.5" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-66" value="NNStorageRetentionManager" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="1470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-71" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-68" target="0e4srzgfKUrXxJ_X6snr-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-73" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-68" target="0e4srzgfKUrXxJ_X6snr-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-68" target="0e4srzgfKUrXxJ_X6snr-82">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-85" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-68" target="0e4srzgfKUrXxJ_X6snr-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-68" target="0e4srzgfKUrXxJ_X6snr-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-68" target="0e4srzgfKUrXxJ_X6snr-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-68" value="2.创建FSNamesystem" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-75" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-70" target="0e4srzgfKUrXxJ_X6snr-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-70" value="BLockManager" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-72" value="LeaseManager" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-77" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-74" target="0e4srzgfKUrXxJ_X6snr-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-74" target="0e4srzgfKUrXxJ_X6snr-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0e4srzgfKUrXxJ_X6snr-74" target="0e4srzgfKUrXxJ_X6snr-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-74" value="dataNodeManager" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="1370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-76" value="HeartBeatManager" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1310" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-78" value="DatanodeAdminManager" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1370" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-80" value="FsClusterStat" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="1430" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-82" value="BlockIdManager" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-84" value="FsServerDefaults" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1660" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-86" value="FSDirectory" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1750" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-88" value="&lt;div&gt;从磁盘加载文件&lt;/div&gt;&lt;div&gt;loadFsImage&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="670" y="2030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0e4srzgfKUrXxJ_X6snr-91" value="org.apache.hadoop.hdfs.server.namenode.FSNamesystem#loadFSImage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="525" y="1970" width="410" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
